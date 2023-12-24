@@ -12,13 +12,13 @@ local Variables = {
 
 local Players = game:GetService("Players")
 
- if not game:IsLoaded() then
+if not game:IsLoaded() then
     repeat
         wait()
     until game:IsLoaded()
- end
+end
 
- local function putinair(Type)
+local function putinair(Type)
     if CmdSettings["AirLock"] == nil and Type == true then
         local BP = Variables["Player"].Character.HumanoidRootPart:FindFirstChild("AirLockBP")
         if BP then
@@ -88,18 +88,8 @@ end
 local function setupbank()
     game.Players.LocalPlayer.Character.Head.Anchored = false
 
-    local function getPlayerByUserId(userId)
-        for _, player in pairs(Players:GetPlayers()) do
-            if player.UserId == userId then
-                return player
-            end
-        end
-    end
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-389, 21, -338)
 
-    local plrrlrllr = getPlayerByUserId(getgenv().Settings.HostSettings.Controller)
-
-    local targetHumanoidRootPart = plrrlrllr.Character and plrrlrllr.Character:FindFirstChild("HumanoidRootPart")
-       targetHumanoidRootPart.CFrame = CFrame.new(-385, 21, -338)
     for i, v in pairs(getgenv().AltSettings.AltSettings.Alts) do
         if i == "Alt1" then
             if v == plr.UserId then
@@ -394,8 +384,6 @@ if game.PlaceId == 2788229376 then
     --
     -- checkAndKick()
 
-    
-
     local groupId = 15697632 -- Replace with your desired group ID
 
     local function isUserInGroup(userId)
@@ -416,9 +404,9 @@ if game.PlaceId == 2788229376 then
     end
 
     local mainUserIdToCheck = getgenv().Settings.HostSettings.Controller
-    --if isUserInGroup(mainUserIdToCheck) then
+    -- if isUserInGroup(mainUserIdToCheck) then
     --    print("YOU ARE IN THE GROUPP!!")
-    --end
+    -- end
 
     if not isUserInGroup(mainUserIdToCheck) then
         kickPlayer(mainUserIdToCheck, "Your account isn't in the required group. Sorry!")

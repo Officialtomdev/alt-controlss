@@ -26,4 +26,4 @@ getgenv().AltSettings =  {
 ------------- loader ----- dont change below.
 
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Officialtomdev/alt-controls/main/cusmos-altcontrol/LOL/newest.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Officialtomdev/alt-controlss/main/cusmos-altcontrol/LOL/newest.lua", true))()
