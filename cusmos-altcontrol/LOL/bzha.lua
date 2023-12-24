@@ -90,6 +90,8 @@ local function setupbank()
 
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-389, 21, -338)
 
+    local plr = game.Players.LocalPlayer
+
     for i, v in pairs(getgenv().AltSettings.AltSettings.Alts) do
         if i == "Alt1" then
             if v == plr.UserId then
