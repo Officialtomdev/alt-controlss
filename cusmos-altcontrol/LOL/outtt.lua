@@ -88,7 +88,7 @@ end
 local function setupbank()
     game.Players.LocalPlayer.Character.Head.Anchored = false
 
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-389, 21, -338)
+   -- game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-389, 21, -338)
 
     for i, v in pairs(getgenv().AltSettings.AltSettings.Alts) do
         if i == "Alt1" then
